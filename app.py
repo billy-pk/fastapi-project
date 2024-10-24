@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 import os
+import uvicorn
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
@@ -57,6 +58,7 @@ async def query_chatbot(user_input: UserInput):
     response = chatbot.invoke_graph(user_input.query)
     return {"response": response}
 
+
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+    port = int(os.getenv("PORT", 8000))  # Use the PORT variable, default to 8000 if not set
+    uvicorn.run("app:app", host="0.0.0.0", port=port)

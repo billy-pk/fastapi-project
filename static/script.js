@@ -7,7 +7,7 @@ document.getElementById('send-button').addEventListener('click', async function(
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
     
     // Send the query to the chatbot backend
-    const response = await fetch('http://localhost:8000/query', {
+    const response = await fetch('https://langchain-chatbot-enjg.onrender.com/query', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

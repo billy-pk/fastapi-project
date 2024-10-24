@@ -33,10 +33,10 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 
 # Serve static files
-app.mount("/static", StaticFiles(directory= STATIC_DIR), name="static")
+app.mount("/static", StaticFiles(directory= "static"), name="static")
 
 # Set up Jinja2 template rendering
-templates = Jinja2Templates(directory= TEMPLATES_DIR)
+templates = Jinja2Templates(directory= "templates")
 
 # Create an instance of the Chatbot
 chatbot = Chatbot()

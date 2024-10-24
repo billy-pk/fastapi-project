@@ -27,10 +27,10 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-# Absolute paths to your directories
-BASE_DIR = "D:/fastapi-project"  # Change this to the correct absolute path
-STATIC_DIR = os.path.join(BASE_DIR, "static")
-TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
+# # Absolute paths to your directories
+# BASE_DIR = "D:/fastapi-project"  # Change this to the correct absolute path
+# STATIC_DIR = os.path.join(BASE_DIR, "static")
+# TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 
 # Serve static files
 app.mount("/static", StaticFiles(directory= "static"), name="static")

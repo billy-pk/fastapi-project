@@ -61,4 +61,8 @@ async def query_chatbot(user_input: UserInput):
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8000))  # Use the PORT variable, default to 8000 if not set
+
+    # Print the port number before starting the server
+    print(f"Starting on port {port}")
+    
     uvicorn.run("app:app", host="0.0.0.0", port=port)

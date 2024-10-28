@@ -19,3 +19,5 @@ _Backend Management_:  FastAPI handles API calls and manages the backend infrast
 LangChat is currently deployed on Render.com, a cloud platform for deploying web applications.
 
 Please note: Due to access restrictions and potential costs associated with running a deployed application, the deployment URL and instructions for accessing the live application might not be included in this public repository
+
+![Chatbot](https://github.com/user-attachments/assets/846337e5-5d19-489b-b2f1-e207628035d0)

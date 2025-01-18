@@ -1,4 +1,4 @@
-**LangChat: A Conversational AI with Web Search Integration**
+**LangChat: A Conversational AI ChatBot with Web Search Integration**
 
 LangChat is a chatbot application built with powerful language processing tools and a user-friendly interface. This project leverages the capabilities of Langgraph/LangChain and OpenAI's GPT-4o-mini model for natural language understanding and generation.
 

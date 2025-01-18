@@ -6,7 +6,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from starlette.requests import Request
 from pydantic import BaseModel
-from chatbot import Chatbot  # Make sure this imports your Chatbot class
+#from chatbot import Chatbot  # Make sure this imports your Chatbot class
+from chatbot3 import Chatbot # chatbot3.py contains code for google generativeai
 from pathlib import Path
 import logging
 from contextlib import asynccontextmanager

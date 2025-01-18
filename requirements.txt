@@ -1,8 +1,8 @@
 fastapi==0.115.2
-langchain_community==0.3.1
-langchain_core==0.3.9
+langchain_community
+langchain_core
 langchain_openai==0.2.2
-langgraph==0.2.35
+langgraph
 pydantic==2.9.1
 python-dotenv==1.0.1
 starlette==0.40.0

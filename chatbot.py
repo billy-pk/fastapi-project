@@ -26,7 +26,7 @@ class Chatbot:
         tools = [tool]
         llm_with_tools = llm.bind_tools(tools)
 
-        sys_msg = SystemMessage(content="You are a helpful assistant, you will reply briefly.")
+        sys_msg = SystemMessage(content="You are a helpful assistant. You may use your tools to provide current information, when required.")
 
         def assistant(state: MessagesState):
             return {'messages': [llm_with_tools.invoke([sys_msg] + state['messages'])]}
